@@ -19,6 +19,7 @@
   "homepage": "https://github.com/NakulShinde/ReactChatApp#readme",
   "dependencies": {
     "react": "^16.4.0",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.0"
   },
   "devDependencies": {
