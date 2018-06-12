@@ -1,5 +1,9 @@
-import React, { Component} from "react";
-import {Grid, Row, Col, Navbar, Nav, NavItem, Well} from 'react-bootstrap/lib';
+import React, { Component} from "react"
+import {Grid, Row, Col} from 'react-bootstrap/lib'
+
+import Header from './Header'
+import Sidebar from './Sidebar'
+import MainContent from './MainContainer'
 
 class Home extends Component{
     render(){
@@ -7,35 +11,19 @@ class Home extends Component{
         <Grid>
         <Row className="show-grid">
           <Col sm={12} md={12}>
-          <Navbar>
-            <Navbar.Header>
-              <Navbar.Brand>
-                <a href="#home">Welcome to React Chat App!</a>
-              </Navbar.Brand>
-            </Navbar.Header>
-            <Navbar.Collapse>
-              <Navbar.Text>By Nakul Shinde!</Navbar.Text>
-            </Navbar.Collapse>
-          </Navbar>
+            <Header></Header>
           </Col>
         </Row>
         <Row className="show-grid">
           <Col sm={4} md={3}>
-            <Nav bsStyle="pills" stacked activeKey={1}>
-              <NavItem eventKey={1}>
-                NavItem 1 content
-              </NavItem>
-              <NavItem eventKey={2}>
-                NavItem 2 content
-              </NavItem>
-            </Nav>
+           <Sidebar></Sidebar>
           </Col>
           <Col sm={8} md={9}>
-            <Well bsSize="small">Messages will appear here!</Well>
+            <MainContent></MainContent>
           </Col>
         </Row>
         </Grid>
       );
     }
 }
-export default Home;
+export default Home
