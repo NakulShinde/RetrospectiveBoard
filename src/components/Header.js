@@ -7,7 +7,7 @@ class Header extends Component{
             <Navbar>
                 <Navbar.Header>
                 <Navbar.Brand>
-                    <a href="#home">Welcome to React Chat App!</a>
+                    <a href="#home">Retrospective!</a>
                 </Navbar.Brand>
                 </Navbar.Header>
                 <Navbar.Collapse>
